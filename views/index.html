@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería</title>
+</head>
+<body>
+    <!--Maquetación de páginas de cliente de la pastelería.-->
+    <!-- El cliente de la pastelería necesita ver los diferentes sabores de pasteles, así como los precios de cada uno. -->
+    <!-- El cliente de la pastelería necesita ver los diferentes adornos con los que se puede decorar el pastel y los precios de cada uno. -->
+    <!-- El cliente de la pastelería tendrá la posibilidad de combinar sabores dependiendo de sus preferencias. -->
+    <!-- El cliente de la pastelería tendrá la posibilidad de combinar adornos dependiendo de sus preferencias. -->
+    <!-- El cliente de la pastelería necesita poner en un formulario su pedido. -->
+    <!-- El formulario debe de contener los datos de contacto del cliente que son Nombre, Teléfono, Correo Electrónico, Descripción general del pastel y la selección de sabores y adornos. -->
+    <!-- La página debe tener información de la pastelería que es Dirección, Teléfono y horarios de atención. -->
+
+    <h1>El Pastelazo</h1>
+    <img src="../assets/img/Logo El Pastelazo.png" alt="cheescake" width="200px">
+    <p>Dirección: Av. San Martín #1540</p>
+    <p>Teléfono: (55) 5555-5555</p>
+    <p>Horario: Lunes a Viernes de 9:00 a 18:00</p>
+    <p>Correo: contacto@elpastelazo.com</p>
+
+    <h2>Sabores</h2>
+    <ul>
+        <li>
+            <a href="?sabor=1">
+                <img src="../assets/img/cheescake.jpg" alt="cheescake">
+                <p>Pastel de Queso</p>
+                <p>$1.500</p>
+            </a>
+        </li>
+        <li>
+            <a href="?sabor=2">
+                <img src="../assets/img/chocolatecake.jpg" alt="chocolatecake">
+                <p>Pastel de Chocolate</p>
+                <p>$1.500</p>
+            </a>
+        </li>
+        <li>
+            <a href="?sabor=3">
+                <img src="../assets/img/vanillacake.jpg" alt="vanillacake">
+                <p>Pastel de Vainilla</p>
+                <p>$1.500</p>
+            </a>
+        </li>
+        <li>
+            <a href="?sabor=4">
+                <img src="../assets/img/lemoncake.jpg" alt="lemoncake">
+                <p>Pastel de Limón</p>
+                <p>$1.500</p>
+            </a>
+        </li>
+    </ul>
+    <h2>Adornos</h2>
+    <ul>
+        <li>
+            <a href="?adorno=1">
+                <img src="../assets/img/1.jpg" alt="">
+                <p>Adorno de Limón</p>
+                <p>$1.500</p>
+            </a>
+        </li>
+        <li>
+            <a href="?adorno=2">
+                <img src="../assets/img/2.jpg" alt="">
+                <p>Adorno de Fresa</p>
+                <p>$1.500</p>
+            </a>
+        </li>
+    </ul>
+    <h2>Pedido</h2>
+    <form action="" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre">
+        <label for="telefono">Teléfono</label>
+        <input type="text" name="telefono" id="telefono">
+        <label for="correo">Correo</label>
+        <input type="text" name="correo" id="correo">
+        <label for="descripcion">Descripción general del pastel y la selección de sabores y adornos</label>
+        <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
